@@ -49,7 +49,7 @@ query PokemonsQuery {
 
   return(
     <Layout>
-      <h1 className="title">Pokemons</h1>
+      <h1 className="title">Pokemones</h1>
       <div className="grid">
       {getPokemons(data)}
       </div>
