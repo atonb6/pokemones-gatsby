@@ -1,0 +1,142 @@
+
+
+.grid {
+    display:grid;
+    width:100%;
+    max-width: 1140px;
+    padding:0 15px;
+    grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap:3rem;
+    margin: 0 auto;
+  }
+
+.title{
+    text-align: center;
+    margin: 56px 0 ;
+    font-size: 3rem;
+    color: goldenrod;
+}
+.pokecard{
+    position: relative;
+    border-radius: 16px;
+    padding: 16px;
+    border: 8px solid #f9ee75;
+    background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(182, 223, 165) 50%, rgb(124, 213, 122) 100%);
+    &.Grass{
+        background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(182, 223, 165) 50%, rgb(124, 213, 122) 100%);
+    }
+    &.Fire{
+        background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(226, 154, 103) 50%, rgb(213, 54, 54) 100%);
+    }
+    &.Water{
+        background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(165, 199, 223) 50%, rgb(122, 172, 213) 100%);
+    }
+    &.Bug{
+        background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(209, 223, 165) 50%, rgb(194, 213, 122) 100%);
+    }
+    &.Normal{
+        background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(223, 205, 165) 50%, rgb(213, 189, 122) 100%);    
+    }
+    &.Poison{
+        background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(180, 165, 223) 50%, rgb(128, 122, 213) 100%);
+    }
+    &.Electric{
+        background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(246, 251, 159) 50%, rgb(251, 255, 86) 100%);
+    }
+    &.Ground{
+        background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(187, 173, 140) 50%, rgb(185, 151, 107) 100%);
+    }
+    &.Fairy{
+        background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(218, 165, 223) 50%, rgb(208, 122, 213) 100%);
+    }
+    &.Fighting{
+        background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(226, 208, 103) 50%, rgb(213, 111, 54) 100%);
+    }
+    &.Psychic{
+        background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(165, 103, 226) 50%, rgb(128, 54, 213) 100%);
+    }
+    &.Grass{
+        background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(182, 223, 165) 50%, rgb(124, 213, 122) 100%);
+    }
+    &.Bug{
+        background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(209, 223, 165) 50%, rgb(194, 213, 122) 100%);
+    }
+    &.Dragon{
+        background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(249, 250, 73) 50%, rgb(244, 201, 37) 100%);
+    }  
+
+
+
+
+    &__img{
+        max-width: 200px;
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        border-radius: 15px;
+        height: 200px;
+        object-fit: contain;
+    }
+
+    &__number{
+        position: absolute;
+        left: -25px;
+        top: -25px;
+        background-color: #fff;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.39); 
+        box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.39);
+        color: black;
+        font-weight: bold;
+    }
+
+    &__power{
+        display: flex;
+        justify-content: space-between;
+
+        &__hp{
+            color: rgb(60, 172, 209);
+        }
+        &__cp{
+            color: rgb(141, 36, 36);
+        }
+    }
+
+    &__name{
+        margin: 0;
+        color: #000;
+    }
+
+    &__group{
+        color: #000000;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    &__class{
+        color: #252525;
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+
+    &__res{
+        color: #252525;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 16px;
+    }
+
+    &__weak{
+        color: #252525;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 16px;
+    }
+}
